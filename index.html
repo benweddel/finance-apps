@@ -15,22 +15,24 @@
 
 	<table>
 		<tr>
-			<td><label for="mtgAmt">Mortgage Amount:</label></td>
+			<td><label for="mtgAmt">Mortgage Amount:&nbsp;&nbsp;$</label></td>
 			<td><input type="text" id="mtg-amt" name="mtgAmt"></td>
 		</tr>
 		<tr>
 			<td><label for="intRate">Interest Rate(%):</label></td>
 			<td><input type="text" id="mtg-int" name="intRate"></td>
+			<td>%</td>
 		</tr>
 		<tr>
-			<td><label for="amortPeriod">Amortization Period:</label></td>
-			<td><input type="text" id="mtg-period" name="amortPeriod"></td>
+			<td><label for="mtgPeriod">Amortization Period:</label></td>
+			<td><input type="text" id="mtg-period" name="mtgPeriod"></td>
+			<td>year(s)</td>
 		</tr>
 	</table>
 
 	<button id="mtg-calc">Calculate</button>
 
-	<p id="mtg-result">Monthly Payment</p>
+	<p id="mtg-result"></p>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="scripts/mrtgApp.js"></script>
 </body>
